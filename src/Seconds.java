@@ -1,26 +1,26 @@
 public class Seconds {
     public static void main(String[] args) {
-        // Дано количество секунд
+        // Number of Second is given
         int seconds = 10000000;
 
-        //Сохраним сколько секунд в минутах, часах и сутках
+        //Seconds in minutes, hours and days
         int secondsInMinutes = 60;
         int secondsInHours = secondsInMinutes * 60;
         int secondsInDay = secondsInHours * 24;
 
-        //Считаем количество дней
+        //Number of days
         int days = seconds / secondsInDay;
 
-        //Считаем количество часов
+        //Number of hours
         int hours = (seconds - secondsInDay * days) / secondsInHours;
 
-        //Считаем количество минут
+        //Number of minutes
         int minutes = (seconds - secondsInDay * days - secondsInHours * hours) / secondsInMinutes;
 
-        //Считаем количество секунд
+        //Number of seconds
         int secondsLeft = seconds - secondsInDay * days - secondsInHours * hours - secondsInMinutes * minutes;
 
-        //Вывод информации
+        //Result!
         System.out.println("Дано количество секунд: " + seconds);
         System.out.println("Это равно");
         System.out.println("Дней: " + days);
